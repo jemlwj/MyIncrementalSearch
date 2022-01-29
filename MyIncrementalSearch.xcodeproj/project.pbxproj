@@ -14,6 +14,8 @@
 		B9FE92BD27A5AD52004A32B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FE92BC27A5AD52004A32B0 /* Assets.xcassets */; };
 		B9FE92C027A5AD52004A32B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FE92BE27A5AD52004A32B0 /* LaunchScreen.storyboard */; };
 		B9FE92CB27A5AD53004A32B0 /* MyIncrementalSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FE92CA27A5AD53004A32B0 /* MyIncrementalSearchTests.swift */; };
+		B9FE92D627A5AFFF004A32B0 /* APIPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FE92D527A5AFFF004A32B0 /* APIPresenter.swift */; };
+		B9FE92DA27A5B371004A32B0 /* RepositoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FE92D827A5B11C004A32B0 /* RepositoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		B9FE92C627A5AD53004A32B0 /* MyIncrementalSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyIncrementalSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FE92CA27A5AD53004A32B0 /* MyIncrementalSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIncrementalSearchTests.swift; sourceTree = "<group>"; };
 		B9FE92CC27A5AD53004A32B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9FE92D527A5AFFF004A32B0 /* APIPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPresenter.swift; sourceTree = "<group>"; };
+		B9FE92D827A5B11C004A32B0 /* RepositoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 				B9FE92B327A5AD4E004A32B0 /* AppDelegate.swift */,
 				B9FE92B527A5AD4E004A32B0 /* SceneDelegate.swift */,
 				B9FE92B727A5AD4E004A32B0 /* ViewController.swift */,
+				B9FE92D527A5AFFF004A32B0 /* APIPresenter.swift */,
+				B9FE92D827A5B11C004A32B0 /* RepositoryModel.swift */,
 				B9FE92B927A5AD4E004A32B0 /* Main.storyboard */,
 				B9FE92BC27A5AD52004A32B0 /* Assets.xcassets */,
 				B9FE92BE27A5AD52004A32B0 /* LaunchScreen.storyboard */,
@@ -201,8 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9FE92B827A5AD4E004A32B0 /* ViewController.swift in Sources */,
+				B9FE92DA27A5B371004A32B0 /* RepositoryModel.swift in Sources */,
 				B9FE92B427A5AD4E004A32B0 /* AppDelegate.swift in Sources */,
 				B9FE92B627A5AD4E004A32B0 /* SceneDelegate.swift in Sources */,
+				B9FE92D627A5AFFF004A32B0 /* APIPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
