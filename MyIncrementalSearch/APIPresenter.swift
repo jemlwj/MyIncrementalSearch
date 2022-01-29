@@ -21,8 +21,6 @@ class APIPresenter: NSObject {
     }
     
     func loadList(query: String, page: Int, success: @escaping (([Item]) -> Void), throttleFailure: @escaping ()->Void ) {
-        print(APIPresenter.lastAPICall.timeIntervalSince1970)
-        print(Date(timeIntervalSinceNow: 5).timeIntervalSince1970)
         if (Date().timeIntervalSince(APIPresenter.lastAPICall)) < 5 {
             throttleFailure()
             return

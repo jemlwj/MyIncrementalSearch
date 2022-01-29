@@ -23,8 +23,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print (APIPresenter.lastAPICall.timeIntervalSinceNow)
-        print(Date().timeIntervalSinceNow)
     }
     
     @IBAction func sendPressed(_ sender: Any) {
@@ -81,7 +79,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height) {
             if !isLoading {
                 isLoading = true
-                self.presenter.loadList(query: self.queryTextfield.text ?? "test", page: self.loadedPages, success: { items in
+
+                let query = self.queryTextfield.text ?? ""
+                
+                let queryEncoded = query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+                
+                self.presenter.loadList(query: queryEncoded ?? "", page: self.loadedPages, success: { items in
                     self.items.append(contentsOf: items)
                     self.isLoading = false
                     DispatchQueue.main.async {
